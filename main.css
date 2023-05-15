@@ -33,11 +33,11 @@ header {
     display: flex;
     flex-direction: row;
     align-items: center;
-    z-index: 2;
 }
 
 #menu-izda img {
     height: auto;
+    position: fixed;
 }
 
 #menu-dcha {
@@ -47,7 +47,7 @@ header {
     justify-content: right;
     align-items: center;
     font-weight: 300;
-    z-index: 2;
+    font-size: 2v;
 }
 
 #menu-dcha ul li {
@@ -85,31 +85,35 @@ article {
     display: flex;
     flex-direction: row;
     justify-content: left;
+    padding: 0;
+    max-height: 60vh;
+    overflow: hidden;
 }
 
 #left1 img {
-    width: auto;
-    height: auto;
-    max-height: 60vh;
     align-self: center;
+    width: 100%;
+    height: auto;
 }
 
 #right1 {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    Color: #4c76a0;
+    align-items: left;
+    color: #4c76a0;
     padding-top: 6%;
     padding-bottom: 6%;    
     padding-left: 6vw;
+    padding-right: 6vw;
 }
 
 #right1 p {
-    padding-top: 1.2vw;
+    padding-top: 1.4vw;
 }
 
 #right1 button {
-    width: 60vmin;
+    width: 100%;
     background-color: #4c76a0;
     border-radius: 15px;
     border-color: #6ea6dd;
@@ -122,33 +126,32 @@ h2 {
     font-weight: bolder;
     color: #4c76a0;
     line-height: 0.85;
-    font-size: 2.7vmax;
+    font-size: 2.5vmax;
 }
 
 section {
+    padding-top: 5%;
+    padding-bottom: 5%;
     padding-left: 5%;
     padding-right: 5%;
-    padding-top: 20px;
-    padding-bottom: 20px;
     border-style: none none solid none;
     border-width: 3px;
     border-color: #6ea6dd;
 }
 
-figure {
-    padding-left: 5%;
-    padding-right: 5%;
-    padding-top: 20px;
-    padding-bottom: 20px;
-    border-style: none none solid none;
-    border-width: 3px;
-    border-color: #6ea6dd;
-    background-color: #8e364a;
-    color: #ffffff;
+#video {
+    padding: 0;
+}
+
+h3 {
+    line-height: 0.95;
+    font-size: 1.7vmax;
 }
 
 h4 {
     font-style: italic;
+/*    line-height: 0.65; */
+    font-size: 2vmax;
 }
 
 #comentarios {
@@ -157,7 +160,6 @@ h4 {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    color: #e69752;
 }
 
 #estadisticas {
@@ -166,14 +168,10 @@ h4 {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    color: #e69752;
 }
 
 main {
-    padding-left: 5%;
-    padding-right: 5%;
-    padding-top: 20px;
-    padding-bottom: 20px;
+    padding: 5%;
     border-style: none none solid none;
     border-width: 3px;
     border-color: #6ea6dd;
@@ -185,8 +183,6 @@ main {
     align-items: baseline;
     flex-flow: row wrap;
     height: auto;
-    padding-left: 5vmin;
-    padding-right: 5vmin;
 }
 
 .card {
@@ -208,6 +204,16 @@ main {
 
 }
 
+figure {
+    padding: 5%;
+    margin: 0;
+    border-style: none none solid none;
+    border-width: 3px;
+    border-color: #6ea6dd;
+    background-color: #e69752;
+    color: #ffffff;
+}
+
 #left2 {
     display: flex;
     flex-direction: column;
@@ -216,28 +222,36 @@ main {
     padding-top: 6%;
     padding-bottom: 6%;
     padding-left: 6vw;
+    padding-right: 6vw;
 }
 
 #right2 {
-    background-color: #6ea6dd;
     display: flex;
     flex-direction: row;
     justify-content: right;
+    padding: 0;
+    max-height: 60vh;
+    overflow: hidden;
 }
 
 #right2 img {
+    align-self: center;
     width: 100%;
     height: auto;
 }
 
 #left2 button {
-    width: 60vmin;
+    width: 100%;
     background-color: #4c76a0;
     border-radius: 15px;
     border-color: #6ea6dd;
     padding: 5px;
     font-size: 10pt;
     color: #ffffff;
+}
+
+#left2 p {
+    padding-top: 1.4vw;
 }
 
 footer {
@@ -250,7 +264,7 @@ footer {
 }
 
 h5 {
-    font-size: small;
+    font-size: 0.6rem;
     line-height: 0.8;
 }
 
@@ -274,6 +288,8 @@ h5 {
 
 #logomedio img {
     width: auto;
+    max-height: auto;
+    max-width: 20vw;
 }
 
 #textodcha {
