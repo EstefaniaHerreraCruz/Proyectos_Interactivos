@@ -15,7 +15,7 @@
 <body>
     <div class="container-fluid">
 
-        <header class="row">
+        <!-- <header class="row">
             <div class="col-6 col-md-6" id="menu-izda">
                 <img src="imagenes/logo_negativo.png" alt="logo">
             </div>
@@ -38,7 +38,32 @@
                     </div>
                 </nav>
             </div>
-        </header>
+        </header> -->
+
+        
+        <nav class="navbar navbar-expand-lg bg-body-tertiary">
+            <div class="container-fluid">
+              <a class="navbar-brand" href="#">
+                <img src="imagenes/logo_negativo.png" alt="logo">
+              </a>
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse justify-content-end" id="navbarText">
+                <ul class="navbar-nav">
+                    <li class="nav-item"><a class="nav-link" href="#">qué hacemos</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#">spot</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#">descarga</a></li>
+                    <li class="nav-item"><button class="nav-link" href="#">Registrarse</button></li>
+                    <li class="nav-item"><button class="nav-link" href="#">Iniciar sesión</button></li>
+                </ul>
+                <!-- <span class="navbar-text">
+                  Navbar text with an inline element
+                </span> -->
+              </div>
+            </div>
+          </nav>
+        
 
         <article class="row">
             <div class="col-12 col-lg-6 col-md-6" id="left1">
@@ -83,9 +108,12 @@
         <section class="row">
             <div class="col-12" id="video">
                 <div class="ratio ratio-16x9">
-                    <iframe src="https://video.holcim.com/79594928.ihtml/player.html" title="YouTube video" allowfullscreen></iframe>
-                  </div>
-            </div>
+                    <video width="320" height="240" controls autoplay muted>
+                        <source src="Imagenes/spot-interactivos-2.mp4" type="video/mp4">
+                        <source src="Imagenes/spot-interactivos-2.mp4" type="video/ogg">
+                        Your browser does not support the video tag.
+                    </video>
+                </div>
         </section>
 
         <figure class="row">

@@ -63,7 +63,7 @@ header {
     width: max-content;
 }
 
-header button {
+.navbar-nav button {
     width: auto;
     background-color: #6ea6dd;
     border-radius: 20px;
@@ -307,4 +307,13 @@ h5 {
     justify-content: center;
     align-items: right;
     text-align: right;
+}
+
+.navbar {
+    background-color: #4c76a0;
+    padding: 15px;
+}
+
+.container-fluid {
+    padding: 0;
 }
