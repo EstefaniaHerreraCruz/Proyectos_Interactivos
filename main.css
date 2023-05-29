@@ -81,7 +81,6 @@ article {
 }
 
 #left1 {
-    background-color: #6ea6dd;
     display: flex;
     flex-direction: row;
     justify-content: left;
